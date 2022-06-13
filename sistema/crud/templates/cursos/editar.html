@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block titulo %} Editar nuevo curso {% endblock %}
+
+{% block contenido %} 
+
+<div class="card">
+    <div class="card-header">
+        Editar informacion del Curso
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Datos del Curso</h4>
+        {%include 'cursos/form.html'%}
+    
+    </div>
+    <div class="card-footer text-muted">
+        
+    </div>
+</div>
+
+{% endblock %}
+
+
