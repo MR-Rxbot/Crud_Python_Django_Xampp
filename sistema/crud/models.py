@@ -7,3 +7,5 @@ class Curso(models.Model):
     titulo = models.CharField(max_length=100,verbose_name='Titulo')   
     imagen = models.ImageField(upload_to='imagenes',verbose_name="imagen",null=True)
     descripcion = models.TextField(verbose_name="Descripcion",null=True)
+
+
