@@ -24,12 +24,17 @@
 
                 {%  for Curso in cursos %}
                 <tr>
-                    <td>1</td>
-                    <td>Django con Python</td>
-                    <td>Imagen.jpg</td>
-                    <td>Curso Practico que Explicara el framework de django</td>
+                    <td>{{ Curso.id }}</td>
+                    <td>{{ Curso.titulo }}</td>
+                    <td>
+                        <img src = "{{ Curso.imagen.url }}" height="100"/>
+                        
+                    
+                    </td>
+                    <td>{{ Curso.descripcion }}</td>
                     <td>
                         <a name="" id="" class="btn btn-primary" href="{% url 'editar' %}" role="button">Editar</a> 
+                        
                         <a name="" id="" class="btn btn-danger" href="#" role="button">Borrar</a> 
                     </td>
                 </tr>
