@@ -13,5 +13,6 @@ urlpatterns = [
     path('cursos',views.cursos,name='cursos'),
     path('crear',views.crear,name='crear'),
     path('editar',views.editar,name='editar'),
-    path('eliminar/<int:id>',views.eliminar,name='eliminar')
+    path('eliminar/<int:id>',views.eliminar,name='eliminar'),
+    path('cursos/editar/<int:id>',views.editar,name='editar')
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
