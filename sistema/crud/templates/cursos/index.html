@@ -33,9 +33,9 @@
                     </td>
                     <td>{{ Curso.descripcion }}</td>
                     <td>
-                        <a name="" id="" class="btn btn-primary" href="{% url 'editar' %}" role="button">Editar</a> 
+                        <a name="" id="" class="btn btn-primary" href="{% url 'editar' %}" role="button">Editar</a>
                         
-                        <a name="" id="" class="btn btn-danger" href="#" role="button">Borrar</a> 
+                        <a name="" id="" class="btn btn-danger" href="{% url 'eliminar' Curso.id %}" role="button">Borrar</a> 
                     </td>
                 </tr>
                 {% endfor %}
